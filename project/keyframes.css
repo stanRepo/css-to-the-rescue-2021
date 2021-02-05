@@ -1,0 +1,31 @@
+@keyframes moveCardDown {
+  from {
+    margin-left: -11em;
+  }
+
+  to {
+    /* transform: rotateZ(-90deg);
+    margin-left: -10em;
+    margin-top: 60vh; */
+    /* transform: rotate3d(1, 27, 1, -3deg) translateX(0px) skewY(0deg)
+      translateY(0px); */
+    transform: rotate3d(-2, -26, 2, 49deg) translateX(-605px) skewY(2deg)
+      translateY(13px) rotateX(-3deg);
+  }
+}
+
+@keyframes moveCardUp {
+  from {
+    margin-left: -10em;
+  }
+
+  to {
+    /* transform: rotateZ(0deg);
+    margin-left: -11em;
+    margin-top: 0px; */
+    /* transform: rotate3d(1, -27, 1, 3deg) translateX(-320px) skewY(17deg)
+      translateY(-45px); */
+    transform: rotate3d(1, 1, 1, 0deg) translateX(0px) skewY(0deg)
+      translateY(0px) rotateX(0deg);
+  }
+}
