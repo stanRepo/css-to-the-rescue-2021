@@ -19,6 +19,7 @@ Welke CSS-Technieken?
 - prefers-color-scheme
 - prefers-reduced-motion
 - root, css-variabelen
+- @keyframes
 
 Waar liggen de (grootste) uitdagingen?
 
