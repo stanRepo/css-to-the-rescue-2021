@@ -35,3 +35,28 @@
       translateY(0px) rotateX(0deg);
   }
 }
+
+@keyframes flip {
+  0% {
+    color: black;
+    transform: rotateY(-180deg);
+  }
+  50% {
+  }
+  100% {
+    color: white;
+    transform: rotateY(180deg);
+    /* transform: rotate3d(0, -26, 20, 360deg) rotateX(20deg); */
+    /* -webkit-transform: translate(-1030px, -500px) rotate(-32deg); */
+    background-color: rgb(196, 185, 93);
+  }
+}
+@keyframes flipBack {
+  0% {
+    transform: rotateY(180deg);
+    color: green;
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}
