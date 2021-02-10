@@ -1,22 +1,28 @@
 @keyframes moveCardDown {
-  from {
+  0% {
     margin-left: -11em;
   }
+  50% {
+    animation-play-state: paused;
+  }
 
-  to {
+  100% {
     /* transform: rotateZ(-90deg);
     margin-left: -10em;
     margin-top: 60vh; */
     /* transform: rotate3d(1, 27, 1, -3deg) translateX(0px) skewY(0deg)
       translateY(0px); */
-    transform: rotate3d(-2, -26, 2, 49deg) translateX(-605px) skewY(2deg)
-      translateY(13px) rotateX(-3deg);
+    transform: rotate3d(-2, -26, 2, 49deg) translateX(-645px) skewY(2deg)
+      translateY(25px) rotateX(-3deg);
+    background-color: rgb(233, 236, 22);
+    z-index: calc(-1 * --thisCount);
+    /* transform: rotate3d(-2vw, -26vw, 2vw, 49deg) translateX(-645px) skewY(2deg)
+      translateY(25px) rotateX(-3deg); */
   }
 }
 
 @keyframes moveCardUp {
   from {
-    margin-left: -10em;
   }
 
   to {
