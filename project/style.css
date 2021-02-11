@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 :root {
   --folder-bg: grey;
-  /* --moveCurrentCard: ; */
-  /* --moveCardAway: calc(); */
+
   --movement: calc(50vw * 10 / 20);
   --thisCount: calc(counter * 1.7 / 100);
+  --cardWidth: clamp(100px, 300px, 500px);
+  --cardheight: clamp(200, 500px, 640px);
+  --bg-Random: #1e88e5
+    linear-gradient(
+      to bottom,
+      #1e88e5,
+      #1e88e5 calc(50% - 10px),
+      #3949ab calc(50% + 10px),
+      #3949ab
+    );
+    --font-on-cover: font-family: 'Amatic SC', cursive;
 }
 header {
   color: white;
@@ -11,34 +22,64 @@ header {
 body {
   margin: 0;
   padding: 0;
+font-family: var(--font-on-cover);
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
+details em{
+  /* color:orange; */
+  font-size:30px;
+}
+
 details {
-  font-size: 1vh;
+  padding: 0px 0px 0px 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border:0;
+outline:none;
+box-shadow:none;
+ 
 }
-details p {
-  color: black;
-  font-size: xx-large;
+details > p {
+  color: Black;
+  font-size: x-large;
+  
+  text-align: left;
 }
-h3 span {
-  transform: scale3d(1.5);
+
+h3 em {
+  font-size: 50px;
+  
+  text-shadow: 2px 1px 1px #000;
+  
+}
+h3 em:hover{
+ color:green;
+ transition:0.2s;
 }
 details:focus {
 }
 details h3 {
   font-kerning: 10px;
   color: whitesmoke;
-  letter-spacing: 5px;
-  text-decoration: overline;
+  letter-spacing: 15px;
+
+  /* text-shadow: 1px 1px 1px #000; */
   text-transform: capitalize;
   font-size: xx-large;
+}
+body > main > section > label > details > em{
+text-align: initial;
+color:green;
+}
+
+label[type="radio"] {
+  text-shadow: 10px 10px 10px #000;
 }
 summary {
   top: 10px;
@@ -47,97 +88,57 @@ summary {
   font-kerning: 10px;
   color: whitesmoke;
   letter-spacing: 5px;
-  text-decoration: overline;
-  text-transform: capitalize;
-}
-section label {
-  z-index: calc(attr(value) * 2);
-  position: absolute;
-  width: 20em;
-  margin-left: -11em;
-  /* min-width: 300px; */
-  border-radius: 5px;
 
+}
+
+section label {
+  position: absolute;
+  width: var(--cardWidth);
+  height: var(--cardheight);
+  margin-left: -11em;
+  border-radius: 5px;
+  font-family: var(--font-on-cover);
   height: 60vh;
   background-color: grey;
-  background: url("./assets/pastrami.jpg") no-repeat;
-
   padding: 0;
-  /* border-radius: 71vw 62vw 100vw 100vw / 0vw 0vw 100vw 100vw; */
-  box-shadow: inset 0 0 10px rgb(0, 0, 0);
-  filter: invert();
 }
 
-section label:before {
-  content: attr(title);
-  text-align: center;
-  font-size: xx-large;
-  position: absolute;
-  top: 0;
-  width: inherit;
-  display: block;
-  height: 60vh;
-  background-color: rgba(0, 81, 255, 0.733);
 
-  border-radius: 100% 50% 50% 0% / 0% 100% 100% 100%;
-  z-index: 101;
-  transition: 1s;
-  transform-origin: left;
-  transform: rotateY(0deg);
+svg[value="next"]{
+  width:50px;
+  height:50px;
 }
-section label:hover:before {
-  /* content: attr(title); */
-  transform: rotateY(180deg);
-  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+svg[value="next"]:hover{
+animation: nextBtn 1s 1 running;
 }
 
-section label:after {
-  content: attr(title);
-  text-align: center;
-  font-size: xx-large;
-  position: absolute;
-  top: 0;
-  width: inherit;
-  display: block;
-  height: 60vh;
-  background-color: rgb(0, 255, 115);
+label span {
+  color: green;
+  font-size:20px;
+  vertical-align: bottom;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 
-  border-radius: 50% 100% 0% 100% / 100% 0% 0% 100%;
-
-  z-index: 100;
-  transition: 1s;
-  transform-origin: right;
-  transform: rotateY(0deg);
-  /* animation: flipBack 2s running forwards; */
 }
-section label:hover:after {
-  content: attr(title);
-  transform: rotateY(-180deg);
-  box-shadow: inset 0 0 10px rgb(0, 0, 0);
-
-  /* animation: flip 1s running forwards; */
-  /* filter: blur(5px); */
-  /* left: 25%; */
-  /* top: -20vh; */
-  /* width: 20vh; */
-}
-
 section label:nth-child(0) {
 }
-section {
-  counter-reset: counter;
-}
-input:checked + label {
+
+input[type="radio"]:checked + label {
   animation-name: moveCardDown;
   animation-play-state: running;
   animation-fill-mode: forwards;
   animation-duration: 0.8s;
+
 }
-input + label {
-  animation-name: moveCardUp;
-  animation-play-state: running;
+
+input[type="radio"] + label {
+  /* z-index:10; */
+  /* animation-name: moveCardUp;
+  animation-play-state: paused;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
+  animation-duration: 1.5s; */
 }
 input {
   position: absolute;
