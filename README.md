@@ -25,6 +25,7 @@ Waar liggen de (grootste) uitdagingen?
 
 - Het leesbaar houden van de teksten die op de folder staan (gerechten)
   Neem Schets(en) van het ontwerp op.
+  - het rouleren / verplaatsen van de menu kaartjes
 
 Maak een eerste breakdown schets.
 
