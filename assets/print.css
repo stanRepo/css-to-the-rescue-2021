@@ -1,0 +1,15 @@
+/* Printing Notes
+- Allow background Images in your printer settings (right-click print => extra options=> allow backgound images.
+
+
+
+*/
+body {
+  color: red;
+}
+label:after {
+  display: none;
+}
+label:before {
+  display: none;
+}
