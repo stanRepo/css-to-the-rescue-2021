@@ -106,6 +106,10 @@ section label {
   background-color: grey;
   padding: 0;
 }
+section label:hover{
+  background-color: rgb(189, 189, 189);
+  transition:1s;
+}
 
 
 svg[value="next"]{
@@ -113,7 +117,7 @@ svg[value="next"]{
   height:50px;
 }
 svg[value="next"]:hover{
-animation: nextBtn 1s 1 running;
+animation: nextBtn .5s 1 running;
 }
 
 label span {

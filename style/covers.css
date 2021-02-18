@@ -27,6 +27,7 @@ section label:before {
 section label:hover:before {
   transform: rotateY(180deg);
   box-shadow: -200px -16px 159px -125px rgba(0, 0, 0, 0.63) inset;
+  background-color: rgb(47, 255, 75);
 }
 
 section label:after {
@@ -50,4 +51,5 @@ section label:after {
 section label:hover:after {
   transform: rotateY(-180deg);
   box-shadow: 200px -16px 125px -85px rgba(0, 0, 0, 0.63) inset;
+  background-color: rgb(47, 255, 75);
 }
