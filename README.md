@@ -4,7 +4,8 @@ Week 1
 
 ## Voorbereiding
 
-Welke Opdracht?
+### Welke Opdracht?
+
 CSS Zen Garden - 2021 version
 
 - Responsive restaurant menu (de ruwe html) <!-- EEN FOLDER, maar dan 1 die veel vaker uitklapt dan verwacht. -->
@@ -13,13 +14,14 @@ CSS Zen Garden - 2021 version
 
 Welke CSS-Technieken?
 
-- grid || Flex
-- transform (rotateX,Y, Z??)
-- minmax()
-- prefers-color-scheme
-- prefers-reduced-motion
-- root, css-variabelen
-- @keyframes
+- [x] grid || Flex
+- [x]transform (rotateX,Y, Z??)
+- []minmax()
+- [x]prefers-color-scheme
+- []prefers-reduced-motion
+- []root, css-variabelen
+- [x]@keyframes
+- []@media print
 
 Waar liggen de (grootste) uitdagingen?
 
