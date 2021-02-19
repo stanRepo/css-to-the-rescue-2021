@@ -16,25 +16,27 @@ Welke CSS-Technieken?
 
 - [x] grid || Flex
 - [x]transform (rotateX,Y, Z??)
-- []minmax()
+- [ ]minmax()
 - [x]prefers-color-scheme
-- []prefers-reduced-motion
-- []root, css-variabelen
+- [ ]prefers-reduced-motion
+- [ ]root, css-variabelen
 - [x]@keyframes
-- []@media print
+- [ ]@media print
 
 Waar liggen de (grootste) uitdagingen?
 
 - Het leesbaar houden van de teksten die op de folder staan (gerechten)
   Neem Schets(en) van het ontwerp op.
-  - het rouleren / verplaatsen van de menu kaartjes
+- het rouleren / verplaatsen van de menu kaartjes
+- Het behouden van kleur op de print versie.
 
-Maak een eerste breakdown schets.
+#### Breakdown Schets:
 
 ### Experimenten
 
-Klein onderzoekje naar hoe het uiklappen van menukaarten reeds door anderen eerder gedaan is:
-https://codepen.io/lomojean/pen/EbKvu
+- Klein onderzoekje naar hoe het uiklappen van menukaarten reeds door anderen eerder gedaan is:
+  https://codepen.io/lomojean/pen/EbKvu
+-
 
 ## Week 2 & 3 - Voortgang
 
@@ -52,3 +54,5 @@ Wat ging er soepel , wat was lastig en waar ben je trots op.
 Welke experimenten heb je gedaan die die 'mislukt' zijn.
 Heb je nieuwe inzichten hoe je de kracht CSS kunt benutten (of juist niet).
 Waar wil je meer mee gaan doen.
+
+## Referenties:
