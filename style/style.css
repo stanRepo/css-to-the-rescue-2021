@@ -31,7 +31,7 @@ font-family: var(--font-on-cover);
 }
 
 details em{
-  /* color:orange; */
+
   font-size:30px;
 }
 
@@ -65,9 +65,7 @@ h3 em:hover{
  color:green;
  transition:0.2s;
 }
-details:focus {
 
-}
 details h3 {
   font-kerning: 10px;
   color: whitesmoke;
